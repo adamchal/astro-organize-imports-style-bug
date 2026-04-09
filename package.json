@@ -1,0 +1,17 @@
+{
+  "name": "astro-organize-imports-style-bug",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:pass": "npx prettier -w src/no-style.astro && head -6 src/no-style.astro",
+    "test:fail": "npx prettier -w src/with-style.astro && head -6 src/with-style.astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-astro-organize-imports": "^0.4.12"
+  }
+}
